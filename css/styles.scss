@@ -1,0 +1,241 @@
+// Variables
+$raleway: "Raleway", sans-serif;
+$open: "Open Sans", sans-serif;
+
+// Colores
+$intro-email: hsl(217, 28%, 15%);
+$main-background: #181f2a;
+$footer-background: hsl(216, 53%, 9%);
+$testimonials: hsl(219, 30%, 18%);
+
+$cyan: hsl(176, 68%, 64%);
+$blue: hsl(198, 60%, 50%);
+$light-red: hsl(198, 60%, 50%);
+
+html {
+  height: 100vh;
+  background-color: $testimonials;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+main {
+  color: white;
+  font-family: $open;
+  .main__info {
+    margin-bottom: 13rem;
+    position: relative;
+    margin-top: 4rem;
+    text-align: center;
+    h1 {
+      font-size: 2.3rem;
+    }
+    p {
+      line-height: 2.2rem;
+      font-size: 1.2rem;
+      margin-bottom: 3rem;
+    }
+    .main__button {
+      color: white;
+      border: none;
+      background-color: $cyan;
+      padding: 1rem 5rem;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 700;
+    }
+    svg {
+      position: absolute;
+      top: 230px;
+      left: 0;
+      transform: scale(1.63);
+      z-index: -1;
+    }
+  }
+  .main__image {
+    margin-top: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.grid-elements {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  color: white;
+
+  .grid__element {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 5rem;
+    svg {
+      margin-bottom: 1rem;
+    }
+    h2 {
+      font-family: $raleway;
+      margin-bottom: 1rem;
+    }
+    p {
+      text-align: center;
+      font-family: $open;
+    }
+  }
+}
+
+.mid-content {
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-top: 5rem;
+  img {
+    width: 90%;
+    margin-right: 4rem auto;
+  }
+  .mid-content__text {
+    margin-top: 7rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    h2 {
+      font-size: 2rem;
+      text-align: left;
+      font-family: $raleway;
+    }
+    p {
+      font-size: 1.2rem;
+      font-family: $raleway;
+    }
+    a {
+      text-decoration: none;
+      color: hsl(176, 68%, 64%);
+      font-family: $raleway;
+    }
+  }
+}
+
+.quotes-img {
+  .testimonials__card__quote {
+    position: relative;
+    z-index: -1;
+    top: 9rem;
+    left: 17.3rem;
+  }
+}
+
+.testimonials {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding-top: 8rem;
+  gap: 2rem;
+
+  .testimonials__card {
+    background-color: #263344;
+    padding: 3rem 2rem;
+    color: white;
+    border-radius: 10px;
+    font-family: $raleway;
+    p {
+      text-align: left;
+      margin-bottom: 1.5rem;
+    }
+    .testimonials-card__profile {
+      display: flex;
+      gap: 0.7rem;
+      img {
+        width: 40px;
+        border-radius: 50%;
+      }
+      .profile-info {
+        display: flex;
+        flex-direction: column;
+        .name {
+          margin-bottom: 0.3rem;
+        }
+        .role {
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+}
+
+#footer {
+  margin-top: 10rem;
+  background-color: hsl(217, 28%, 15%);
+  padding: 2rem;
+  border-radius: 20px 20px 0 0;
+  display: grid;
+  grid-template-columns: 35% 20% 20% 20% 20%;
+
+  .footer-grid {
+    font-family: $raleway;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    a {
+      text-decoration: none;
+      color: white;
+    }
+  }
+  .footer-grid__number {
+    span {
+      color: white;
+    }
+  }
+  .footer-grid__mail {
+    span {
+      color: white;
+    }
+  }
+
+  .footer-grid__location {
+    img {
+      margin-bottom: 2rem;
+    }
+    color: white;
+    .location-text {
+      display: flex;
+      gap: 1rem;
+      img {
+        width: 5%;
+        height: 5%;
+      }
+    }
+  }
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 70%;
+}
+
+#navbar {
+  margin-top: 2.5rem;
+  display: flex;
+  align-items: center;
+  font-family: $raleway;
+  color: white;
+  justify-content: space-between;
+  .navbar__logo {
+    font-weight: 700;
+    transform: scale(0.8);
+  }
+  .navbar__buttons {
+    display: flex;
+    gap: 2.5rem;
+    a {
+      color: white;
+      text-decoration: none;
+      font-weight: 400;
+      font-size: 0.9rem;
+    }
+  }
+}
